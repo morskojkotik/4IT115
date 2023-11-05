@@ -1,0 +1,50 @@
+.root-pane {
+    -fx-background-image: url('scaryHouse.jpg');
+    -fx-background-size: cover;
+     -fx-border-color: black;
+     -fx-border-width: 0 0 50 0;
+}
+
+.scary-button {
+    -fx-background-color: red;
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-border-color: darkred;
+    -fx-border-width: 3px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-effect:
+        dropshadow(three-pass-box, darkred, 10, 0, 0, 0),
+        linear-gradient(to bottom, darkred, darkred 49%, darkred 51%, darkred);
+}
+
+.scary-button:hover {
+    -fx-text-fill: black;
+    -fx-background-color: darkred;
+}
+
+/* Apply a dark background */
+#root {
+    -fx-background-color: #000000;
+}
+
+/* Style the buttons */
+#buttonSend {
+    -fx-background-color: #990000; /* Dark red */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-weight: bold;
+}
+
+
+/* Style the text area */
+#vystup {
+    -fx-background-color: #000000;
+    -fx-text-fill: #FF0000; /* Bright red text */
+}
+
+
+
+/* Style the images */
+#player, #background {
+    -fx-effect: dropshadow(three-pass-box, red, 10, 0, 0, 0);
+}
